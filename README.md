@@ -47,11 +47,11 @@ I created an Ubuntu 18.04.3 LTS desktop with VirtualBox 6, so I could install Ec
 I provide examples of training the MNIST dataset with two different models and then predict against sample digits. 
 * Train model 1 using MNIST dataset
     * `cd install-tensorflow`
-    * `mnist1train.py`
+    * `python mnist1train.py`
 * Predict model 1 using MNIST dataset
-    * `mnist1predict.py`
+    * `python mnist1predict.py`
 * Train model 2 using MNIST dataset
-    * `mnist2train.py`
+    * `python mnist2train.py`
 * Predict model 2 using MNIST dataset
-    * `mnist2predict.py`
+    * `python mnist2predict.py`
  
