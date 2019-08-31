@@ -44,8 +44,14 @@ I created an Ubuntu 18.04.3 LTS desktop with VirtualBox 6, so I could install Ec
 * `git clone --depth 1 https://github.com/sgjava/install-tensorflow.git`
     
 ### Run examples
-* Train model using MNIST dataset
+I provide examples of training the MNIST dataset with two different models and then predict against sample digits. 
+* Train model 1 using MNIST dataset
     * `cd install-tensorflow`
-    * `mnist-train.py`
-* Load model using MNIST dataset
-    * `mnist-load.py`
+    * `mnist1train.py`
+* Predict model 1 using MNIST dataset
+    * `mnist1predict.py`
+* Train model 2 using MNIST dataset
+    * `mnist2train.py`
+* Predict model 2 using MNIST dataset
+    * `mnist2predict.py`
+ 

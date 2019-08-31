@@ -2,7 +2,7 @@
 Copyright (c) Steven P. Goldsmith. All rights reserved.
 """
 
-"""Train model with the MNIST database of handwritten digits.
+"""Train model with the MNIST database of handwritten digits. This example was taken from the official TensorFlow site.
 
 @author: sgoldsmith
 
@@ -34,10 +34,10 @@ model.compile(optimizer='adam',
 # Train model
 logger.info("Train model")
 model.fit(x_train, y_train, epochs=5, verbose=0)
-# Evaluate model
-logger.info("Evaluate model")
-accuracy_score = model.evaluate(x_test, y_test)
-logger.info("%s: %4.2f, %s: %4.2f" % (model.metrics_names[0], accuracy_score[0], model.metrics_names[1], accuracy_score[1]))
 # Save the entire model to a HDF5 file
 logger.info("Save model")
-model.save('output/mnist.h5')
+model.save('output/mnist1.h5')
+# Evaluate model
+logger.info("Evaluate model")
+accuracy_score = model.evaluate(x_test, y_test, verbose=0)
+logger.info("%s: %4.2f, %s: %4.2f" % (model.metrics_names[0], accuracy_score[0], model.metrics_names[1], accuracy_score[1]))
